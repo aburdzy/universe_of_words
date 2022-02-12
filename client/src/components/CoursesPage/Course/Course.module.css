@@ -1,0 +1,158 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.70);
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 22px;
+}
+
+.header {
+    display: flex; 
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.nameContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.name {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.padlock {
+    color: var(--font);
+    padding: 0 3.18px;
+    margin-right: 10px;
+}
+
+.flashcardsProgress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flashcardsProgress span {
+    margin-left: 6px;
+    font-weight: 500;
+    color: var(--green);
+}
+
+.courseInfo .flashcardsProgress span {
+    color: var(--red);
+}
+
+.flashcardsProgress div {
+    margin-left: 10px;
+}
+
+.header .flashcardsProgress span {
+    color: var(--green);
+}
+
+.courseInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.completedInfo {
+    display: flex;
+}
+
+.completedInfo {
+    width: 170px;
+}
+
+.completedInfo > span {
+    height: 20px;
+    font-weight: 500;
+}
+
+
+.greenStyle,
+.completedSign {
+    color: var(--green);
+}
+
+.redStyle,
+.uncompletedSign {
+    color: var(--red)
+}
+
+.completedFlashcards,
+.uncompletedFlashcards {
+    width: 25px;
+    height: 20px;
+}
+
+.completedFlashcards {
+    background-image: url('../../../images/flashcard-completed.svg');
+}
+
+.uncompletedFlashcards {
+    background-image: url('../../../images/flashcard-uncompleted.svg');
+}
+
+.completedSign,
+.uncompletedSign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    box-sizing: content-box;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.completedSign {
+    border: 2px solid var(--green);
+    padding: 2px 4.5px;
+}
+
+.uncompletedSign {
+    border: 2px solid var(--red);
+    padding: 2px 6.375px;
+}
+
+.public {
+    display: flex;
+    width: 100%;
+}
+
+.public > span {
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 400px) {
+    .progressInfo {
+        flex-direction: column;
+    }
+
+    .flashcardsProgress + .flashcardsProgress {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .generalInfo {
+        flex-direction: column-reverse;  
+    }
+
+    .flashcardAmount {
+        margin-top: 10px;
+    }
+}

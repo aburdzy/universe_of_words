@@ -1,0 +1,110 @@
+.flashcards {
+    display: flex;
+    background-color: white;
+    margin: 0.7em 0;
+    border-radius: 4px;
+    position: relative;
+}
+
+.add {
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.form {
+    width: 50%;
+}
+
+input[type="text"].courseName {
+    width: 100%;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.inputContainer > label {
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.save {
+    margin-top: 20px;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    height: 26px;
+    cursor: pointer;
+    padding-right: 30px;
+}
+
+.label > input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.unchecked,
+.checked {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255, 0.7);
+    font-size: 12px;
+    box-sizing: content-box;
+    border-radius: 4px;
+}
+
+.unchecked {
+    border: 2px solid var(--red);
+    color: var(--red);
+    padding: 5px 6.875px;
+}
+
+.checked {
+    border: 2px solid var(--green);
+    color: var(--green);
+    font-size: 12px;
+    height: 22px;
+    padding: 0px 5px;
+}
+
+.imageContainer {
+    margin-top: 12px;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+.image {
+    width: 100%;
+}
+
+.deleteImage {
+    height: 34px;
+    background-color: var(--lightRed);
+    color: var(--red);
+    margin-top: 1em;
+}

@@ -1,0 +1,74 @@
+.actionButtonContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.actionButtonContainer button {
+    flex: 1 1 0;
+    margin: 0 2px;
+}
+
+input[type="text"].searchCourse {
+    max-width: 50%;
+    width: 50%;
+}
+
+.lackOfCourses {
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.select {
+    width: 50%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.manageUsers {
+    margin-bottom: 0.5em;
+}
+
+.disabled {
+    background-color: rgba(193, 193, 193, 0.7);
+    color: rgb(114, 114, 114);
+    cursor: not-allowed;
+}
+
+@media only screen and (max-width: 380px) {   
+    .actionButtonContainer button {
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 400px) {   
+    .container {
+       flex-direction: column;
+       margin: 0;
+    }
+
+    .select {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    input[type="text"].searchCourse {
+        max-width: 100%;
+        width: 100%;
+        margin: 1em 0 0.5em 0;
+    }
+}

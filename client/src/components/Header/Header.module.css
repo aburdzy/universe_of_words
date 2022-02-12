@@ -1,0 +1,87 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-right: 5vw;
+    padding-left: 3vw;
+    margin-bottom: 3em;
+    padding-top: 2em;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logo {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('../../images/logo.svg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 91px;
+    max-height: 69px;
+    width: 22.75vw;
+    height: 17.25vw;   
+}
+
+.name {
+    width: 100%;
+    height: 100%;
+    font-size: calc(0.7rem + 1vw);
+    font-weight: 500;
+    margin-left: 1em;
+}
+
+.logo {
+    font-family: 'Roboto Slab', serif;
+    font-size: calc(1rem + 0.6vw);
+    text-align: center;
+}
+
+.sign {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  
+    width: 320px;
+}
+
+.sign > a {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: clamp(12px, 0.7rem + 1vw, 20px);
+}
+
+.sign > a + a {
+    margin-left: 2vw;
+}
+
+.sign a:link,
+.sign a:visited,
+.sign a:active {
+    color: var(--font)
+}
+
+@media only screen and (max-width: 740px) {
+    .sign {
+        justify-content: flex-end;
+        font-size: calc(1rem + 2vw);
+    }
+
+    .sign > a + a{
+        padding-left: 3vw;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .logo {
+        font-size: calc(1.5rem + 0.5vw);
+    }
+}

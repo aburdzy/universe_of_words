@@ -1,0 +1,41 @@
+.loader {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+  
+.circle1, 
+.circle2, 
+.circle3 {
+    margin: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    animation: move 1.25s infinite;
+}
+  
+.circle2 {
+    animation-delay: 0.2s;
+}
+  
+.circle3 {
+    animation-delay: 0.4s;
+}
+  
+@keyframes move {
+    50% {
+        transform: translateY(-20px);
+    }
+}

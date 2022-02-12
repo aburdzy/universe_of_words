@@ -1,0 +1,93 @@
+h1 {
+    font-size: calc(1.5rem + 0.8vw);
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+}
+
+.blobContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5vh;
+} 
+
+.blobRightContainer,
+.blobLeftContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+.blobLeftContainer {
+    background-image: url('../../images/blob-left.svg');
+    max-width: 490px;
+    max-height: 358px;
+    width: 98.0vw;
+    height: 71.6vh;
+}
+
+.blobRightContainer {
+    background-image: url('../../images/blob-right.svg');
+    max-width: 524px;
+    max-height: 358px;
+    width: 104.8vw;
+    height: 71.6vh;
+}
+
+.blobContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.blobContent div + div {
+    margin-top: 20px;
+}
+
+.blobContainer div {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.blobHeader {
+    display: flex;
+    align-items: center;
+}
+
+.blobHeaderTitle {
+    margin-left: 34px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.blobHeaderContent {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1212px) {
+    .blobRightContainer {
+        margin-top: 26px;
+    }
+    
+    .blobContainer {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .blobRightContainer {
+        margin-top: 0px;
+        width: auto;
+    }
+
+    .blobLeftContainer {
+        width: auto;
+    }
+}

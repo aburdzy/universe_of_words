@@ -1,0 +1,64 @@
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top:  0;
+    left:  0;
+    transform: translate(calc(50vw - 50%), calc(50vh - 50%));
+    display: flex;
+    width: initial;
+    height: initial;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 4px;
+}
+
+.closeContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.closeModal {
+    cursor: pointer;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.buttons {
+    margin-top: 1em;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buttons > button {
+    width: 100px;
+    height: 34px;
+}
+
+.action {
+    background-color: var(--lightRed);
+    color: var(--red);
+}
+
+.cancel {
+    width: 100%;
+}

@@ -1,0 +1,57 @@
+.header {
+    margin-bottom: 1em;
+}
+
+.tile {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.7);
+    flex: 1;
+    padding: 20px 22px;
+    border-radius: 4px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.edit, .ban {
+    margin-right: 20px;
+}
+
+.edit, .delete, .ban {
+    cursor: pointer;
+}
+
+.buttons, .button {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.buttons > button {
+    width: 100px;
+    height: 34px;
+}
+
+.button > button {
+    width: 100%;
+    height: 34px;
+}
+
+.confirm {
+    background-color: var(--lightRed);
+    color: var(--red);
+}
+
+input[type="text"].input {
+    height: 40px;
+}
+
+.form {
+    margin-top: 1em;
+}
+
+.form .buttons button:last-child {
+    background-color: var(--lightRed);
+    color: var(--red)
+}

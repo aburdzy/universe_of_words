@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    width: 100%;
+    flex: 1 1 0;
+}
+
+.container > button {
+    flex: 1 1 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > button:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.container > button:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.container > button:nth-child(2) {
+    border-left: 1px solid var(--btnBg);
+    border-right: 1px solid var(--btnBg);
+    border-radius: 0;
+}
+
+
+button.inActive {
+    background-color: rgba(176, 198, 238, 0.5);
+    color: rgba(61, 68, 133, 0.8);
+}
+
+.icon {
+    position: absolute;
+    right: 5%;
+}
+
+.hint {
+    display: none;
+    position: absolute;
+    border-radius: 4px;
+    z-index: 9999;
+    font-weight: normal;
+    background-color: white;
+    padding: 10px;
+    font-size: 16px;
+    top: 100%;
+    color: var(--font);
+}
+
+.icon:hover + .hint {
+    display: flex;
+    text-align: left;
+}
+
+@media only screen and (max-width: 488px) {    
+    .hint {
+        width: 300%;
+    }
+
+    .hint.one {
+        left: 0;
+    }
+
+    .hint.two {
+        left: -100%;
+    }
+
+    .hint.three {
+        left: -200%;
+    }
+
+    .icon {
+        top: 0;
+    }
+}
+

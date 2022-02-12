@@ -1,0 +1,141 @@
+.container  {
+    width: 100%;
+}
+
+.courseName {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8em;
+}
+
+.courseName > h2 {
+    margin-right: 10px;
+    letter-spacing: 2px;
+    font-size: calc(1.2rem + 0.7vw);
+    word-break: break-all;
+}
+
+.courseName > svg {
+    cursor: pointer;
+}
+
+.courseName > form > input {
+    background-color: rgba(255, 255, 255);
+}
+
+.edit {
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+.form {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.label {
+    display: block;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(12px, 1rem + 0.7vw, 20px);
+    cursor: pointer;
+    padding-right: 32px;
+    text-align: center;
+}
+
+.label > input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255, 0.7);
+    border-radius: 4px;
+}
+
+.label input:checked ~ .checkmark,
+.label input ~ .checkmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.label input:checked ~ .checkmark {
+    color: var(--green);
+    border: 2px solid var(--green);
+    font-size: 12px;
+}
+
+.label input ~ .checkmark {
+    color: var(--red);
+    border: 2px solid var(--red);
+    font-size: 12px;
+    padding: 5px 6.88px;
+}
+
+.add {
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.save {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.buttons {
+    margin-top: 1em;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buttons > button {
+    width: 100px;
+    height: 34px;
+}
+
+.delete {
+    background-color: var(--lightRed);
+    color: var(--red);
+}
+
+.imageContainer {
+    margin-top: 12px;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+.image {
+    width: 100%;
+}
+
+.deleteImage {
+    height: 34px;
+    background-color: var(--lightRed);
+    color: var(--red);
+    margin-top: 1em;
+}

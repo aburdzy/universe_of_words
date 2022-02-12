@@ -1,0 +1,62 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.imageUpload {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.container > .upload {
+    height: 34px;
+}
+
+.upload {
+    padding: 0 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.file {
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+}
+
+.imageUpload {
+    flex-direction: column;
+}
+
+.imageUpload label {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid var(--font);
+    border-radius: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.imageContainer {
+    display: flex;
+    max-width: 100%;
+    margin-bottom: 12px;
+}
+
+.image {
+    width: 100%;
+}

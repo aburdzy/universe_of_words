@@ -1,0 +1,85 @@
+.createRoom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.createRoom input[type="text"] {
+    width: 48%;
+}
+
+.newRoom {
+    width: 48%;
+}
+
+.header {
+    margin-bottom: 1em;
+}
+
+input[type="text"].searchRoom {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.lackOfRooms {
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.invitation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user {
+    font-weight: 500;
+}
+
+.invitation button {
+    height: 30px;
+    font-size: 14px;
+    width: 48%;
+}
+
+.invitation > div {
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accept {
+    background-color: var(--lightGreen);
+    color: var(--green);
+}
+
+.dismiss {
+    background-color: var(--lightRed);
+    color: var(--red);
+}
+
+@media only screen and (max-width: 400px) {    
+    .createRoom {
+        flex-direction: column;
+    }
+
+    .createRoom input[type="text"] {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .newRoom {
+        width: 100%;
+    }
+}

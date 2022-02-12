@@ -1,0 +1,54 @@
+.room {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    padding: 22px;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.name {
+    max-width: 400px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.container {
+    display: flex;  
+    width: 50%;
+    flex-direction: column;
+}
+
+.icon {
+    display: flex;
+    color: var(--font);
+    box-sizing: content-box;
+}
+
+.userContainer {
+    display: flex;
+}
+
+.username + .username {
+    margin-left: 6px;
+}
+
+.username::after {
+    content: ',';
+}
+
+.username:last-child::after {
+    content: '';
+}
+
+.gameInProgress {
+    border: 1px solid var(--font);
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+

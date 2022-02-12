@@ -1,0 +1,264 @@
+.name {
+    margin-bottom: 1em;
+}
+
+.tile {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.host {
+    border: 1px solid var(--font);
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+.gameOptions {
+    width: 100%;
+}
+
+.gameOptions > div {
+    margin-top: 1em;
+}
+
+.gameOptions > h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.gameOptions > h3 {
+    font-weight: 500;
+    margin-top: 1em;
+}
+
+.startGame {
+    width: 100%;
+    margin-top: 1em;
+}
+
+.gameContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.opponentGameOptions .tile {
+    background-color: initial;
+    margin: 0;
+    padding: 0px;
+    height: 50px;
+    font-weight: 500;
+}
+
+.opponentGameOptions .tile > span {
+    width: 100%;
+    text-align: center;
+}
+
+.opponentGameOptions h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+
+.settingContainer {
+    display: flex;
+}
+
+.settingContainer + .settingContainer {
+    margin-top: 1em;
+}
+
+.tile.setting {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.tile.selectedSetting {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: rgba(4, 7, 89, 0.2);
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    right: 5%;
+}
+
+.hint {
+    display: none;
+    position: absolute;
+    border-radius: 4px;
+    z-index: 9999;
+    font-weight: normal;
+    background-color: white;
+    padding: 10px;
+    font-size: 16px;
+    top: 100%;
+}
+
+.icon:hover + .hint {
+    display: flex;
+    text-align: left;
+}
+
+.invite {
+    width: 100%;
+}
+
+.players {
+    margin-top: 1em;
+    max-height: 210px;
+    overflow-y: scroll;
+    padding-right: 4px;
+}
+
+.players::-webkit-scrollbar {
+    width: 6px;
+}
+   
+.players::-webkit-scrollbar-thumb {
+    background-color: rgba(146, 146, 146, 0.7);
+    border-radius: 14px;
+}
+
+.players::-webkit-scrollbar-button {
+    display: none;
+}
+
+.player {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(176, 198, 238, 0.39);
+    border-radius: 4px;
+}
+
+.player span {
+    font-weight: 500;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.player + .player {
+    margin-top: 1em;
+}
+
+.sendInvitation {
+    padding: 0 10px;
+    height: 40px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.refreshList {
+    margin-top: 2em;
+    height: 40px;
+}
+
+.noPlayers {
+    display: flex;
+    justify-content: center;
+}
+
+.kick {
+    cursor: pointer;
+}
+
+.selectContainer {
+    display: flex;
+    width: 100%;
+}
+
+.selectContainer > * {
+    width: 50%;
+}
+
+.view {
+    width: 100%;
+    margin-top: 1em;
+}
+
+.viewFlashcard {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--btnBg);
+    padding: 10px;
+}
+
+.viewFlashcard:last-child {
+    border-bottom: none;
+}
+
+.viewFlashcard > span {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.viewFlashcard > span:last-child {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.modal {
+    max-height: 210px;
+    overflow-y: scroll;
+    padding-right: 4px;
+}
+
+.modal::-webkit-scrollbar {
+    width: 6px;
+}
+   
+.modal::-webkit-scrollbar-thumb {
+    background-color: rgba(146, 146, 146, 0.7);
+    border-radius: 14px;
+}
+
+.modal::-webkit-scrollbar-button {
+    display: none;
+}
+
+@media only screen and (max-width: 488px) {    
+    .tile {
+        padding: 14px;
+    }
+
+    .opponentGameOptions .tile  {
+        height: 40px;
+    }
+
+    .hint {
+        width: 200%;
+        left: -100%;
+    }
+
+    .selectContainer {
+        flex-direction: column;
+    }
+
+    .selectContainer > * {
+        width: 100%;
+        height: 40px;
+        margin-bottom: 1em;
+    }
+}
+

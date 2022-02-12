@@ -1,0 +1,52 @@
+.coursePreviewContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0;
+    width: 70%;
+    max-width: 600px;
+    min-width: 270px;
+}
+
+.flashcardsAction {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flashcardsAction + .flashcardsAction {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.flashcardsAction button {
+    width: 48%;
+}
+
+.disabled {
+    background-color: rgba(193, 193, 193, 0.7);
+    color: rgb(114, 114, 114);
+    cursor: not-allowed;
+}
+
+.buttons {
+    margin-top: 1em;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buttons > button {
+    width: 100px;
+    height: 34px;
+}
+
+.delete {
+    background-color: var(--lightRed);
+    color: var(--red);
+}
+
+@media (min-width: 320px) and (max-width: 900px) {        
+    .coursePreviewContainer button {
+        padding: 0.7rem;
+        width: 80px;
+    }
+}

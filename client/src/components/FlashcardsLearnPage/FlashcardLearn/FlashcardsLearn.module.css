@@ -1,0 +1,115 @@
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.buttons > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44%;
+}
+
+.buttons > button.check {
+    width: 100%;
+}
+
+.flashcardsOptions > h3 {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.flashcardsOptions {
+    border-radius: 4px;
+    width: 100%;
+}
+
+.flashcardsAmountContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.flashcardsAmountContainer > button {
+    height: 34px;
+}
+
+.flashcardsAmountContainer > button:last-child {
+    padding: 0 8px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    margin: 20px 0;
+}
+
+.add,
+.subtract {
+    width: 34px;
+    height: 34px;
+}
+
+.add {
+    color: var(--red);
+    background-color: var(--lightRed);
+}
+
+.subtract {
+    color: var(--green);
+    background-color: var(--lightGreen);
+}
+
+.startLearning {
+    width: 100%;
+}
+
+.flashcardsButtons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.flashcardsButtons > button {
+    height: 40px;
+    flex: 1;
+}
+
+.flashcardsButtons > button:nth-child(1) {
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+} 
+
+.flashcardsButtons > button:nth-child(3) {
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+}
+
+.flashcardsButtons > button:nth-child(2) {
+    border-radius: 0%;
+    border-right: 1px solid var(--btnBg);
+}
+
+button.nonActive {
+    background-color: rgba(176, 198, 238, 0.5);
+    color: rgba(61, 68, 133, 0.8);
+}
+
+.repeatFlashcard {
+    background-color: var(--lightRed);
+    color: var(--red);
+}
+
+.rememberFlashcard {
+    background-color: var(--lightGreen);
+    color: var(--green);
+}
+
+.select {
+    width: 100%;
+    margin: 1em 0;
+}
