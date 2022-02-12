@@ -7,6 +7,7 @@ A link to the page: http://uow.roxana.usermd.net
 Used technologies:
 - React.js
 - Node.js + Express.js
+- Socket.IO
 - SQL + MySQL
 
 The web application contains pages:
